@@ -1,1 +1,9 @@
-/* custom css*/
+html, body {
+    min-height: 800vh;
+}
+
+.container {
+    min-height: 800vh;
+    display: flex;
+    flex-direction: column;
+}
