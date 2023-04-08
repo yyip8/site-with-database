@@ -1,0 +1,32 @@
+body {
+  background-color: lightgray;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.welcome-message {
+  padding: 50px;
+  background-color: lightcyan;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px gray;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-statement {
+  padding: 30px;
+  background-color: lightblue;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px gray;
+  margin: 50px;
+  text-align: left;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}

@@ -33,7 +33,8 @@ module.exports.processAddPage = (req, res, next) => {
         "author": req.body.author,
         "published": req.body.published,
         "description": req.body.description,
-        "price": req.body.price
+        "price": req.body.price,
+        "stars": req.body.stars
     });
     Book.create(newBook, (err, Book) => {
         if (err) {
@@ -72,7 +73,8 @@ module.exports.processEditPage = (req, res, next) => {
         "author": req.body.author,
         "published": req.body.published,
         "description": req.body.description,
-        "price": req.body.price
+        "price": req.body.price,
+        "stars": req.body.stars
     });
     Book.updateOne({ _id: id }, updatedBook, (err) => {
         if (err) {

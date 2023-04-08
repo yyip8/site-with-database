@@ -14,20 +14,22 @@
             <tr>
                 <%if(typeof displayName =='string' && displayName){%>
                 <th class="text-content col-2">Title</th>
-                <th class="text-content col-2">Author</th>
+                <th class="text-content col-1">Author</th>
                 <th class="text-content col-1">Year</th>
                 <th class="col-3">Description</th>
                 <th class="text-content col-1">Price</th>               
+                <th class="text-content col-1">Rating</th>               
                 <th class="col-3">Comments</th>
                 <th class="col-3">Add Comment</th>
                 <th class="text-content col-1"></th>
                 <th class="text-content col-1"></th>
                 <%}else{%>
                 <th class="text-content col-2">Title</th>
-                <th class="text-content col-2">Author</th>
+                <th class="text-content col-1">Author</th>
                 <th class="text-content col-1">Year</th>
                 <th class="col-3">Description</th>
                 <th class="text-content col-1">Price</th>
+                <th class="text-content col-1">Rating</th>
                 <th class="col-3">Comments</th>
                 <th class="col-3">Add Comment</th>
                 <%}%>
@@ -36,10 +38,15 @@
             <tr>
                 <%if(typeof displayName =='string' && displayName){%>
                 <td class = "text-center col-2"><%=BookList[count].name%></td>
-                <td class = "text-center col-2"><%=BookList[count].author%></td>
+                <td class = "text-center col-1"><%=BookList[count].author%></td>
                 <td class = "text-center col-1"><%=BookList[count].published%></td>
                 <td class = "col-3"><%=BookList[count].description%></td>
                 <td class = "text-center col-1"><%=BookList[count].price%></td>
+                <td class = "col-1">
+                    <% for(let count1 = 0; count1<BookList[count].stars; count1++){ %>
+                         <img src="/assets/images/star.png" alt="Star" class="star" />    
+                    <%}%>
+                </td>    
                 <td class = "col-3"><%- BookList[count].comments.join('<br><br>') %></td>
                 <td>
                     <form action="/bookList/comment/<%=BookList[count]._id%>" method="POST">
@@ -51,10 +58,15 @@
                 <td class ="text-center col-1"><a href="/bookList/delete/<%=BookList[count]._id%>" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Delete</a></td>    
             <%}else{%>
                 <td class = "text-center col-2"><%=BookList[count].name%></td>
-                <td class = "text-center col-2"><%=BookList[count].author%></td>
+                <td class = "text-center col-1"><%=BookList[count].author%></td>
                 <td class = "text-center col-1"><%=BookList[count].published%></td>
                 <td class = "col-3"><%=BookList[count].description%></td>
                 <td class = "text-center col-1"><%=BookList[count].price%></td>
+                <td class = "col-1">
+                    <% for(let count1 = 0; count1<BookList[count].stars; count1++){ %>
+                         <img src="/assets/images/star.png" alt="Star" class="star" />    
+                    <%}%>
+                </td>
                 <td class = "col-3"><%- BookList[count].comments.join('<br><br>') %></td>
                 <td>
                     <form action="/bookList/comment/<%=BookList[count]._id%>" method="POST">
