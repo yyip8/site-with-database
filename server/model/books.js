@@ -4,7 +4,7 @@ let bookModel = mongoose.Schema({
     author: String,
     published: String,
     description: String,
-    stars: Number,
+    rating: Number,
     price: Number,
     comments: {
         type: [String],

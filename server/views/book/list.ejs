@@ -43,8 +43,8 @@
                 <td class = "col-3"><%=BookList[count].description%></td>
                 <td class = "text-center col-1"><%=BookList[count].price%></td>
                 <td class = "col-1">
-                    <% for(let count1 = 0; count1<BookList[count].stars; count1++){ %>
-                         <img src="/assets/images/star.png" alt="Star" class="star" />    
+                    <% for(let count1 = 0; count1<BookList[count].rating; count1++){ %>
+                         <img src="/Assets/images/star.png" alt="Star" class="star" />    
                     <%}%>
                 </td>    
                 <td class = "col-3"><%- BookList[count].comments.join('<br><br>') %></td>
@@ -63,8 +63,8 @@
                 <td class = "col-3"><%=BookList[count].description%></td>
                 <td class = "text-center col-1"><%=BookList[count].price%></td>
                 <td class = "col-1">
-                    <% for(let count1 = 0; count1<BookList[count].stars; count1++){ %>
-                         <img src="/assets/images/star.png" alt="Star" class="star" />    
+                    <% for(let count1 = 0; count1<BookList[count].rating; count1++){ %>
+                         <img src="/Assets/images/star.png" alt="Star" class="star" />    
                     <%}%>
                 </td>
                 <td class = "col-3"><%- BookList[count].comments.join('<br><br>') %></td>
