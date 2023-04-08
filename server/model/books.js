@@ -6,10 +6,7 @@ let bookModel = mongoose.Schema({
     description: String,
     rating: Number,
     price: Number,
-    comments: {
-        type: [String],
-        default: []
-    }
+    comments: String
 },
 
 {

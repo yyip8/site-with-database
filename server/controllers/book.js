@@ -74,7 +74,8 @@ module.exports.processEditPage = (req, res, next) => {
         "published": req.body.published,
         "description": req.body.description,
         "price": req.body.price,
-        "rating": req.body.rating
+        "rating": req.body.rating,
+        "comments": req.body.comments
     });
     Book.updateOne({ _id: id }, updatedBook, (err) => {
         if (err) {
@@ -122,6 +123,7 @@ module.exports.processComment = (req, res, next) => {
 }
 */
 
+/*
 module.exports.processComment = (req, res, next) => {
     let bookId = req.params.id;
     let newComment = req.body.comment;
@@ -153,4 +155,41 @@ module.exports.processComment = (req, res, next) => {
         }
     });
 }
+
+*/
+
+module.exports.processComment = (req, res, next) => {
+    let bookId = req.params.id;
+    let newComment = req.body.comment;
+
+    if (!newComment || newComment.trim() === '') {
+        res.redirect('/bookList');
+        return;
+    }
+
+    Book.findById(bookId, (err, book) => {
+        if (err) {
+            console.log(err);
+            res.redirect('/bookList');
+        }
+        else if (!book) {
+            res.redirect('/bookList');
+        }
+        else {
+            // If there are existing comments, append the new comment with a line break, otherwise, set the new comment as the comments text
+            book.comments = book.comments ? book.comments + '\n' + newComment : newComment;
+
+            book.save((err, updatedBook) => {
+                if (err) {
+                    console.log(err);
+                    res.redirect('/bookList');
+                }
+                else {
+                    res.redirect('/bookList');
+                }
+            });
+        }
+    });
+}
+
 
