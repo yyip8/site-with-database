@@ -102,62 +102,6 @@ module.exports.performDelete = (req, res, next) => {
     });
 }
 
-/* 
-module.exports.processComment = (req, res, next) => {
-    let id = req.params.id;
-    let comment = req.body.comment;
-    console.log("process comment");
-    console.log("id" + id);
-    console.log("comment" + comment);
-    console.log(req.body);
-
-    Book.updateOne({ _id: id }, { $concat: { comments: '\n' + comment } }, (err) => {
-        if (err) {
-            console.log(err);
-            res.end(err);
-        }
-        else {
-            res.redirect('/bookList');
-        }
-    });
-}
-*/
-
-/*
-module.exports.processComment = (req, res, next) => {
-    let bookId = req.params.id;
-    let newComment = req.body.comment;
-
-    if (!newComment || newComment.trim() === '') {
-        res.redirect('/bookList');
-        return;
-    }
-
-    Book.findById(bookId, (err, book) => {
-        if (err) {
-            console.log(err);
-            res.redirect('/bookList');
-        }
-        else if (!book) {
-            res.redirect('/bookList');
-        }
-        else {
-            book.comments.push(newComment);
-            book.save((err, updatedBook) => {
-                if (err) {
-                    console.log(err);
-                    res.redirect('/bookList');
-                }
-                else {
-                    res.redirect('/bookList');
-                }
-            });
-        }
-    });
-}
-
-*/
-
 module.exports.processComment = (req, res, next) => {
     let bookId = req.params.id;
     let newComment = req.body.comment;
