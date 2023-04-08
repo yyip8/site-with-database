@@ -14,3 +14,10 @@ html, body {
   margin-right: 5px;
   filter: goldenscale(100%);
 }
+
+pre {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    max-width: 200px;
+}
