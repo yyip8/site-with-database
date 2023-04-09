@@ -1,9 +1,9 @@
 html, body {
-    min-height: 800vh;
+    min-height: 150vh;
 }
 
 .container {
-    min-height: 800vh;
+    min-height: 150vh;
     display: flex;
     flex-direction: column;
 }
