@@ -1,151 +1,170 @@
 <%-include ('partials/header.ejs');%>
-<%-include ('partials/main_nav.ejs');%>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Book Rating Website - Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<body >
-<div class="container" >
-    <div class="row">
-        <div class="col-md-8" >
-            <h1>Welcome to Book Rating Website</h1>
-            <p class="lead">We provide ratings and reviews for books to help you make informed decisions. Our team of experts carefully evaluate books and provide unbiased reviews to help you choose the best book for you.</p>
-            <p>Whether you're a fan of fiction or non-fiction, romance or horror, we have something for you. Our website features a wide variety of books across genres and categories.</p>
-            <a href="/bookList" class="btn btn-primary">View Books</a>
-        </div>
-        <div class="col-md-4">
-            <img src="https://images.pexels.com/photos/3860099/pexels-photo-3860099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid">
-        </div>
-    </div>
+    <%-include ('partials/main_nav.ejs');%>
+        <!DOCTYPE html>
+        <html>
+
+        <head>
+            <title>Book Rating Website - Home</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </head>
+
+        <body>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1>Welcome to Book Rating Website</h1>
+                        <p class="lead">We provide ratings and reviews for books to help you make informed decisions.
+                            Our team of experts carefully evaluate books and provide unbiased reviews to help you choose
+                            the best book for you.</p>
+                        <p>Whether you're a fan of fiction or non-fiction, romance or horror, we have something for you.
+                            Our website features a wide variety of books across genres and categories.</p>
+                        <a href="/bookList" class="btn btn-primary">View Books</a>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://images.pexels.com/photos/3860099/pexels-photo-3860099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            class="img-fluid">
+                    </div>
+                </div>
 
 
 
-    <h2>Latest Reviews</h2>
-    <hr>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card mb-4 shadow-sm border-0">
-                <img src="https://images.pexels.com/photos/3860099/pexels-photo-3860099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="Book Cover">
+                <h2>Latest Reviews</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm border-0">
+                            <img src="https://images.pexels.com/photos/3860099/pexels-photo-3860099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="card-img-top" alt="Book Cover">
 
 
 
-				</div>
-        </div>
-		<div class = "col-md-8">
-		<div class="card-body">
-                    <h4 class="card-title text-primary">Book Title</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <!--
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Book Title</h4>
 
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="card mb-4 shadow-sm border-0">
-                                    <img src="assets/images/find-book.jpg" class="card-img-top" alt="Find a Book">
-                                    <div class="card-body">
-                                        <h4 class="card-title text-primary">Find a Book</h4>
-                                        <p class="card-text">Search our database of rated books to find your next read.</p>
-                                        <a href="#" class="btn btn-primary">Search Now</a>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card mb-4 shadow-sm border-0">
+                                        <img src="https://images.pexels.com/photos/3860099/pexels-photo-3860099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                            class="card-img-top" alt="Find a Book">
+                                        <div class="card-body">
+                                            <h4 class="card-title text-primary">Find a Book</h4>
+                                            <p class="card-text">Search our database of rated books to find your next
+                                                read.</p>
+                                            <a href="#" class="btn btn-primary">Search Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card mb-4 shadow-sm border-0">
+                                        <img src="https://images.pexels.com/photos/3860099/pexels-photo-3860099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                            class="card-img-top" alt="Submit a Book">
+                                        <div class="card-body">
+                                            <h4 class="card-title text-primary">Submit a Book</h4>
+                                            <p class="card-text">Submit a book for our team of experts to rate and
+                                                review.</p>
+                                            <a href="#" class="btn btn-primary">Submit Now</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="card mb-4 shadow-sm border-0">
-                                    <img src="assets/images/submit-book.jpg" class="card-img-top" alt="Submit a Book">
-                                    <div class="card-body">
-                                        <h4 class="card-title text-primary">Submit a Book</h4>
-                                        <p class="card-text">Submit a book for our team of experts to rate and review.</p>
-                                        <a href="#" class="btn btn-primary">Submit Now</a>
-                                    </div>
-                                </div>
+                        </div>
+                    -->
+
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-8">
+                        <div class="card mb-4 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">What We Do</h5>
+                                <p class="card-text">Our team of experts rate and review books to help readers make
+                                    informed decisions about what to read next.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm border-0">
+                            <img src="https://images.pexels.com/photos/3860099/pexels-photo-3860099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="card-img-top" alt="Book Cover">
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm border-0">
+                            <img src="https://images.pexels.com/photos/3860099/pexels-photo-3860099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="card-img-top" alt="Book Cover">
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card mb-4 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Our Mission</h5>
+                                <p class="card-text">To help readers find the best books to read by providing honest and
+                                    thorough book reviews.</p>
                             </div>
                         </div>
                     </div>
 
+                </div>
+                <div class="row">
 
+                    <div class="col-md-8">
+                        <div class="card mb-4 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Join Us</h5>
+                                <p class="card-text">Become a member to access exclusive content, connect with other
+                                    readers, and get personalized book recommendations.</p>
+                                <a href="#" class="btn btn-primary">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm border-0">
+                            <img src="https://images.pexels.com/photos/3860099/pexels-photo-3860099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="card-img-top" alt="Book Cover">
+
+
+
+                        </div>
+                    </div>
 
                 </div>
 
-    </div>
-
-					<div class="row">
-
-                            <div class="col-md-8">
-                                <div class="card mb-4 shadow-sm border-0">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-primary">What We Do</h5>
-                                        <p class="card-text">Our team of experts rate and review books to help readers make informed decisions about what to read next.</p>
-                                    </div>
-                                </div>
-                            </div>
-							<div class="col-md-4">
-            <div class="card mb-4 shadow-sm border-0">
-                <img src="https://images.pexels.com/photos/3860099/pexels-photo-3860099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="Book Cover">
+            </div>
 
 
 
-				</div>
-				</div>
-							</div>
-							<div class="row">
-							<div class="col-md-4">
-            <div class="card mb-4 shadow-sm border-0">
-                <img src="https://images.pexels.com/photos/3860099/pexels-photo-3860099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="Book Cover">
+        </body>
+        <footer class="bg-dark py-3">
 
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p class="text-white">&copy; 2023 Book Rating. All rights reserved.</p>
+                </div>
+            </div>
 
+        </footer>
 
-				</div>
-				</div>
-
-                            <div class="col-md-8">
-                                <div class="card mb-4 shadow-sm border-0">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-primary">Our Mission</h5>
-                                        <p class="card-text">To help readers find the best books to read by providing honest and thorough book reviews.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-							</div>
-							<div class="row">
-
-                            <div class="col-md-8">
-                                <div class="card mb-4 shadow-sm border-0">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-primary">Join Us</h5>
-                                        <p class="card-text">Become a member to access exclusive content, connect with other readers, and get personalized book recommendations.</p>
-                                        <a href="#" class="btn btn-primary">Join Now</a>
-                                    </div>
-                                </div>
-                            </div>
-							<div class="col-md-4">
-            <div class="card mb-4 shadow-sm border-0">
-                <img src="https://images.pexels.com/photos/3860099/pexels-photo-3860099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="Book Cover">
-
-
-
-				</div>
-							</div>
-
-                        </div>
-
- </div>
-
-
-
-</body>
-<footer class="bg-dark py-3">
-
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <p class="text-white">&copy; 2023 Book Rating. All rights reserved.</p>
-                            </div>
-                        </div>
-
-                </footer>
-</html>
+        </html>
